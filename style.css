@@ -1,0 +1,62 @@
+/*Reset de Margin + Webkit pra navegadores*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  border: 0.1rem solid red;
+}
+/*Reconfigurado o tamanho padrão em pixel [ 1rem =10px ] [ por padrão é 1rem = 16px]*/
+:root {
+  font-size: 62.5%; 
+}
+body{
+  background-color: #1a1924 ;
+  font-size: 1.6rem;
+  color: white;
+    
+}
+
+#app{
+  display: grid;
+  padding: 2.4rem 3.2rem;
+  height: 100vh;
+  width: 100vh;
+  /*Linha de código pra dividir os 3 principais blocos #TOP #MESSAGES # BOTTOM*/
+  grid-template-rows: max-content 1fr max-content;
+}
+
+#top{
+  display: flex;
+  align-items: center;
+  justify-content: space-between ;
+}
+/*Ajuste do User info*/
+#user-info {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+#user-info img{
+  width: 4.8rem;
+  height: 4.8rem;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+
+
+
+/*Ajuste do Close-Chat*/
+#close-chat {
+  display: flex;
+  width: 1.5rem;
+  height: 1.5rem;
+  
+}
+
+
+
+

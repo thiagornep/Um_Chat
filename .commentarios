@@ -1,0 +1,4 @@
+- O uso da unidade de medida REM, fazendo uma regra de 3 no : root, forçando o font-size pra 62.5%,
+ resetado o 16px nativo para 1 REM = 10px;
+- Explanação do display flex, com uso do grid-template-rows: max-content 1fr max-content;
+- align-itens está relacionado a blocos em display do tipo flex, de forma que alinham somente horizontalmente.
