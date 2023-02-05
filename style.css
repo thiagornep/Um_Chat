@@ -90,14 +90,22 @@ body {
   gap: 3rem;
 }
 
-.message {
-
+.message .body{
+  margin-top: 1rem;
+  padding: 1.4rem;
+  background-color: #bc3b3b;
+}
+.message:not(.you){
+  width: 50vw;
 }
 
-.messages.message_you{
+.message.you{
   margin-left: auto;
 }
 
+.message.you .top{
+  text-align: right;
+}
 
 
 
