@@ -5,7 +5,7 @@
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  border: 0.1rem solid red;
+  /*border: 0.1rem solid red;*/
 }
 /*Reconfigurado o tamanho padrão em pixel [ 1rem =10px ] [ por padrão é 1rem = 16px]*/
 :root {
@@ -31,7 +31,7 @@ body{
   display: flex;
   align-items: center;
   justify-content: space-between ;
-  border: 2rem solid blue;
+  
 }
 /*Ajuste do User info*/
 #user-info {
@@ -46,6 +46,25 @@ body{
   object-fit: cover;
   border-radius: 50%;
 }
+
+#user-status .status{
+  display: flex;
+  color: #00B37E;
+  align-items: baseline;
+  gap: 0.4rem;
+
+  margin-top: 0.4rem;
+}
+
+#user-status .status::before{
+  content: "";
+  width: 0.8rem;
+  height: 0.8rem;
+  display: block;
+  background-color: #00B37E;
+  border-radius: 50%;
+}
+/*FIM DO TOP*/
 
 
 
