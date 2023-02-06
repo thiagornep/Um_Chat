@@ -34,7 +34,7 @@
         <div class="messages">
          <div class="message">
           <div class="top">Joana Cléo - 15:11h </div>
-          <div class="body">Oi, estou com um projeto incrível em mente, está no escritório? ✔</div>
+          <div class="body">Oi, estou com um projeto incrível em mente, está no escritório? 📲</div>
          </div>
          <div class="message you">
           <div class="top">Você - 15:14h </div>
@@ -49,7 +49,19 @@
           <div class="body">Beleza, aguardo voces às 16h</div>
          </div> 
       </div>
-      <div id="bottom"></div>
+      
     </div>
+    <form id="bottom">
+        <input type="text" placeholder="Digite sua mensagem" />
+        <button>
+          <i class="ph-paper-plane-right-fill"></i>
+        </button>
+      </form>
+    </div>
+
+    <script>
+      const messages = document.querySelector(".messages")
+      messages.lastElementChild.scrollIntoView()
+    </script>
   </body>
 </html>

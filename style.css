@@ -9,30 +9,33 @@
 }
 /*Reconfigurado o tamanho padrão em pixel [ 1rem =10px ] [ por padrão é 1rem = 16px]*/
 :root {
-  font-size: 62.5%; 
+  font-size: 62.5%;
 }
 body {
-  background-color: #1a1924 ;
+  background-color: #1a1924;
   font-size: 1.6rem;
   color: white;
-  font-family: 'roboto',sans-serif;
-    
+  font-family: "roboto", sans-serif;
+  height: 100vh;
+  overflow: hidden;
 }
 
-#app{
+#app {
   display: grid;
   padding: 2.4rem 3.2rem;
   height: 100vh;
   width: 100vh;
+  max-width: 800px;
+  margin: auto;
+
   /*Linha de código pra dividir os 3 principais blocos #TOP #MESSAGES # BOTTOM*/
   grid-template-rows: max-content 1fr max-content;
 }
 
-#top{
+#top {
   display: flex;
   align-items: center;
-  justify-content: space-between ;
-  
+  justify-content: space-between;
 }
 /*Ajuste do User info*/
 #user-info {
@@ -41,28 +44,28 @@ body {
   gap: 1.6rem;
 }
 
-#user-info img{
+#user-info img {
   width: 4.8rem;
   height: 4.8rem;
   object-fit: cover;
   border-radius: 50%;
 }
 
-#user-status .status{
+#user-status .status {
   display: flex;
-  color: #00B37E;
+  color: #00b37e;
   align-items: baseline;
   gap: 0.4rem;
 
   margin-top: 0.4rem;
 }
 
-#user-status .status::before{
+#user-status .status::before {
   content: "";
   width: 0.8rem;
   height: 0.8rem;
   display: block;
-  background-color: #00B37E;
+  background-color: #00b37e;
   border-radius: 50%;
 }
 
@@ -71,7 +74,6 @@ body {
   display: flex;
   width: 1.5rem;
   height: 1.5rem;
-  
 }
 /*FIM DO TOP*/
 
@@ -79,33 +81,82 @@ body {
 #last-seen {
   margin-top: 2.6rem;
   text-align: center;
-  font-size: 12px;
+  font-size: 1.2rem;
   height: 400;
-  line-height: 14px;
+  line-height: 1.4rem;
+}
+
+#messages::-webkit-scrollbar{
+  display: none;
 }
 
 .messages {
   display: grid;
   margin-top: 3rem;
   gap: 3rem;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
 }
 
-.message .body{
+.message .body {
   margin-top: 1rem;
   padding: 1.4rem;
   background-color: #bc3b3b;
+  border-radius: 0 0.8rem 0.8rem 0.8rem;
+  max-width: fit-content ;
 }
-.message:not(.you){
+.message:not(.you) {
   width: 50vw;
 }
 
-.message.you{
+.message.you {
   margin-left: auto;
 }
 
-.message.you .top{
+.message.you .top {
   text-align: right;
 }
 
+.message.you .body {
+  background-color: rgb(8, 128, 234);
+  border-radius: 0.8rem 0.8rem 0 0.8rem;
+}
 
+/*FIM DO CSS MESSAGE*/
 
+/*INICIO CSS INPUT*/
+
+form {
+  display: flex;
+  align-items: center;
+  background: #282843;
+  border-radius: 999rem;
+  padding: 1.4rem 2.4rem;
+}
+
+input {
+  flex: 1;
+  outline: none;
+  color: #e1e1e6;
+}
+
+form:focus-within {
+  outline: 2px solid white;
+}
+
+input::placeholder {
+  color: #e1e1e6;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+}
+
+button i {
+  color: #e1e1e6;
+  font-size: 2.4rem;
+}
+
+input,
+button {
+  background-color: transparent;
+  border: 0;
+}

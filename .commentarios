@@ -3,4 +3,5 @@
 - Explanação do display flex, com uso do grid-template-rows: max-content 1fr max-content;
 - align-itens está relacionado a blocos em display do tipo flex, de forma que alinham somente horizontalmente.
 - Utilizei a .message:not(.you) no CSS
--
+- O uso da propriedade flex: 1; que preenche a tela do input com o widh disponivel.
+- Uso de overflow não rolagem
