@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://unpkg.com/phosphor-icons"></script>
     <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
     <title>Um Chat</title>
   </head>
   <body>
@@ -32,26 +36,31 @@
       <div id="messages">
         <div id="last-seen">Visto pela última vez - hoje às 15:32h</div>
         <div class="messages">
-         <div class="message">
-          <div class="top">Joana Cléo - 15:11h </div>
-          <div class="body">Oi, estou com um projeto incrível em mente, está no escritório? 📲</div>
-         </div>
-         <div class="message you">
-          <div class="top">Você - 15:14h </div>
-          <div class="body">Oi Jô, tô sim, vamos fazer uma reunião e alinhar! 🧐</div>
+          <div class="message">
+            <div class="top">Joana Cléo - 15:11h</div>
+            <div class="body">
+              Oi, estou com um projeto incrível em mente, está no escritório? 📲
+            </div>
+          </div>
+          <div class="message you">
+            <div class="top">Você - 15:14h</div>
+            <div class="body">
+              Oi Jô, tô sim, vamos fazer uma reunião e alinhar! 🧐
+            </div>
           </div>
           <div class="message">
-          <div class="top">Joana Cléo - 15:17h </div>
-          <div class="body">Beleza, vou chamar o Erick pra participar e ajudar a agente.</div>
-         </div>
-         <div class="message you">
-          <div class="top">Você - 15:14h </div>
-          <div class="body">Beleza, aguardo voces às 16h</div>
-         </div> 
+            <div class="top">Joana Cléo - 15:17h</div>
+            <div class="body">
+              Beleza, vou chamar o Erick pra participar e ajudar a agente.
+            </div>
+          </div>
+          <div class="message you">
+            <div class="top">Você - 15:14h</div>
+            <div class="body">Beleza, aguardo voces às 16h</div>
+          </div>
+        </div>
       </div>
-      
-    </div>
-    <form id="bottom">
+      <form id="bottom">
         <input type="text" placeholder="Digite sua mensagem" />
         <button>
           <i class="ph-paper-plane-right-fill"></i>
